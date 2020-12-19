@@ -2,11 +2,11 @@ import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <div><input type="checkbox" /><p>Hello</p></div>
-      <div><input type="checkbox" /><p>Hello</p></div>
-      <div><input type="checkbox" /><p>Hello</p></div>
-      <div><input type="checkbox" /><p>Hello</p></div>
+    <div style={{display: "flex"}}className="App">
+      <input type="checkbox" /><p style={{color: "blue"}}>Hello</p>
+      <input type="checkbox" /><p>Hello</p>
+      <input type="checkbox" /><p>Hello</p>
+      <input type="checkbox" /><p>Hello</p>
     </div>
   );
 }
