@@ -9,7 +9,7 @@ function App() {
       <Component title="Sam; " subtitle="Color" backgroundColor="Light Green: " information="Sam's Favorite Color"/>
       <Component title="Holly; " subtitle="Color" backgroundColor="Pink: " information="Holly's Favorite Color"/>
       <Component title="Hazel; " subtitle="Color" backgroundColor="Purple: " information="Hazel's Favorite Color"/>
-      <Component title="Adam; " subtitle="Color" backgroundColor="Red: " information="Adam's Favorite Color"/>
+      <Component title="Adam; " subtitle="Color" backgroundColor="#ff0000" information="Adam's Favorite Color"/>
       <Component title="Kevin; " subtitle="Color" backgroundColor="Green: " information="Kevin's Favorite Color"/>
       <Component title="Nobody; " subtitle="Color" backgroundColor="Yellow: " information="Nobodies Favorite Color"/>
       <Component title="Somebody; " subtitle="Color" backgroundColor="Orange: " information="Somebodies Favorite Color"/>
