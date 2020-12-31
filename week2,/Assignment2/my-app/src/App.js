@@ -1,11 +1,11 @@
-import './App.css';
+import React from "react";
+import Location from "./Location";
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Location />
     </div>
   );
 }
-
 export default App;
