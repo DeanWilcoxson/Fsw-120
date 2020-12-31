@@ -5,8 +5,11 @@ function Component(props){
     let backgroundColor = props.backgroundColor;
     let subTitle = props.subTitle;
     let information = props.information;
+    const styles = { 
+        color:"Blue",
+        backgroundColor:"grey"}
     return (
-        <h1>{title}{backgroundColor}{subTitle}{information}</h1>
+        <h1 style={styles}>{title}{backgroundColor}{subTitle}{information}</h1>
     )
 }
 export default Component;
