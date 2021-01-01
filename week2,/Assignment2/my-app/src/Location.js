@@ -34,6 +34,7 @@ function Location() {
     let place = props.place;
     let price = props.price;
     let primeTime = props.timeToGo;
+    
     return (
       <div style={{backgroundColor:"lightgrey"}}>
         <h1 style={{color:"blue", backgroundColor:"grey"}}>{place}</h1>
