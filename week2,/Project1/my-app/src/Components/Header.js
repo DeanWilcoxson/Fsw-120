@@ -4,18 +4,10 @@ function Header() {
   let header = "Clean Blog";
   let description = "A Blog Theme by Start Bootstrap";
   return (
-    <div
-      style={{
-        color: "white",
-        backgroundColor: "grey",
-        textAlign: "center",
-        padding: "0px",
-        margin: "0px",
-      }}
-    >
+    <div id="header">
       <Navbar />
-      <h1 style={{ fontSize: "90px", fontFamily: "Helvetica" }}>{header}</h1>
-      <h6 style={{ fontSize: "30px", fontFamily: "sans" }}>{description}</h6>
+      <h1 id="title">{header}</h1>
+      <h6 id="desc">{description}</h6>
     </div>
   );
 }

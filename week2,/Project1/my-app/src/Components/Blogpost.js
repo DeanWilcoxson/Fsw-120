@@ -30,22 +30,24 @@ function Blogpost() {
     },
   ];
   let blogData = blogs.map(function (blog) {
-    const title = blog.title;
-    const subTitle = blog.subTitle;
-    const author = blog.author;
-    const date = blog.date;
     return (
-      <div style={{ textAlign: "center"}}>
-        <h1>
-          <b style={{ fontFamily: "sans-Serif" }}>{title}</b>
+      <div id="blogpost">
+        <h1 id="blogdata">
+          <b>{blog.title}</b>
         </h1>
-        <h2>{subTitle}</h2>
-        <span style={{ color: "grey" }}>
-          Posted by <b style={{ color: "black" }}>{author}</b> {date}
+        <h3 id="blogdata1">{blog.subTitle}</h3>
+        <span id="blogdata2">
+          Posted by <b id="blogauthor">{blog.author}</b> {blog.date}
+          <hr />
         </span>
       </div>
     );
   });
-  return <div>{blogData}</div>;
+  return (
+    <div>
+      {blogData}
+      <button id="button"><b>OLDER POSTS &gt;</b></button>
+    </div>
+  );
 }
 export default Blogpost;

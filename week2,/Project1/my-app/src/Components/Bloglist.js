@@ -4,6 +4,7 @@ function Bloglist() {
   return (
     <div>
       <Blogpost />
+      <hr/>
     </div>
   );
 }
