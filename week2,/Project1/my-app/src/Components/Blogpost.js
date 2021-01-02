@@ -1,5 +1,4 @@
 import React from "react";
-
 function Blogpost() {
   let blogs = [
     {
@@ -36,7 +35,7 @@ function Blogpost() {
     const author = blog.author;
     const date = blog.date;
     return (
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center"}}>
         <h1>
           <b style={{ fontFamily: "sans-Serif" }}>{title}</b>
         </h1>

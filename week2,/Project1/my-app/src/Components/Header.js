@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-
 function Header() {
   let header = "Clean Blog";
   let description = "A Blog Theme by Start Bootstrap";
