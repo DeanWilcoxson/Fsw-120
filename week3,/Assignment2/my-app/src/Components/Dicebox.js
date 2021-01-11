@@ -2,7 +2,7 @@ import React from "react";
 import Die from "./Die";
 class DiceBox extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
       num1: 0,
       num2: 0,

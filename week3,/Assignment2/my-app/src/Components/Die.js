@@ -8,7 +8,6 @@ class Die extends React.Component{
             isChecked: false
         }
         this.handleClick = this.handleClick.bind(this);
-
     }
     handleClick(){
         if(this.state.counter < 3){
@@ -33,8 +32,6 @@ class Die extends React.Component{
             textAlign:"center",
             fontSize:"50px"
         }
-    
-
         return(
             <div>
                 <h1 style={styles} type="checkbox">{this.state.num}</h1>
