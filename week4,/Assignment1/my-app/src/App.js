@@ -17,7 +17,7 @@ class App extends React.Component {
   handleClick(event) {
     event.preventDefault();
     this.setState((prevState) => ({
-      listItems: [...prevState.listItems, prevState.name],
+      listItems: [...prevState.listItems, prevState.name]
     }));
   }
   render() {

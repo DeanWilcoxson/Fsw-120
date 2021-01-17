@@ -1,15 +1,16 @@
-import React from 'react';
+import React from "react";
 import Form from "./Form";
 class App extends React.Component {
-  constructor(){
-    super()
-    this.state = {}
+  constructor() {
+    super();
+    this.state = {};
   }
-  render(){return (
-    <div>
-      <Form />
-    </div>
-  )}
+  render() {
+    return (
+      <div>
+        <Form />
+      </div>
+    );
+  }
 }
-
 export default App;
