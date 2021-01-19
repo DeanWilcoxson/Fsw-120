@@ -1,0 +1,49 @@
+        body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr)
+        }
+        
+        #form {
+            width: 400px;
+            border: 3px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        #firstName {}
+        
+        #lastName {}
+        
+        #inputPhone {}
+        
+        #inputEmail {}
+        
+        #inputPlace {}
+        
+        #inputFood {}
+        
+        #inputDesc {}
+        
+        #badge {
+            grid-column: 2/3;
+            border: 3px solid black;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        
+        #header {
+            background-color: gray;
+            color: white;
+        }
+        
+        #name {}
+        
+        #phone {}
+        
+        #email {}
+        
+        #place {}
+        
+        #food {}
+        
+        #desc {}

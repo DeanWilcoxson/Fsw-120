@@ -48,17 +48,12 @@ class Form extends React.Component {
       : this.setState({ [name]: value });
   }
   render() {
-    let styles = {
-      width: "400px",
-      border: "3px solid black",
-      borderRadius: "5px",
-      textAlign: "center",
-    };
     return (
       <div>
-        <div style={styles}>
+        <div id="form">
           <form>
             <input
+              id="firstName"
               type="text"
               placeholder="First Name"
               name="firstName"
@@ -67,6 +62,7 @@ class Form extends React.Component {
               required
             />
             <input
+              id="lastName"
               type="text"
               placeholder="Last Name"
               name="lastName"
@@ -75,7 +71,7 @@ class Form extends React.Component {
               required
             />
             <input
-              // type="number"
+              id="inputPhone"
               placeholder="Phone"
               name="phone"
               pattern="[0-9]{10}"
@@ -84,6 +80,7 @@ class Form extends React.Component {
               required
             />
             <input
+              id="inputEmail"
               type="text"
               placeholder="Email"
               name="email"
@@ -92,6 +89,7 @@ class Form extends React.Component {
               required
             />
             <input
+              id="inputPlace"
               type="text"
               placeholder="Place of Birth"
               name="placeOfBirth"
@@ -100,6 +98,7 @@ class Form extends React.Component {
               required
             />
             <input
+              id="inputFood"
               type="text"
               placeholder="Favorite Food"
               name="favFood"
@@ -108,6 +107,7 @@ class Form extends React.Component {
               required
             />
             <textarea
+              id="inputDesc"
               type="text"
               placeholder="Tell us about yourself"
               cols="40"
@@ -121,37 +121,32 @@ class Form extends React.Component {
             <button onClick={this.handleClick}>Submit</button>
           </form>
         </div>
-        <ol>
+        <div>
           {this.state.badges.map(function (badge, index) {
-            let stylesTwo = {
-              width: "400px",
-              border: "3px solid black",
-              borderRadius: "5px",
-            };
-            console.dir(index);
+            
             return (
-              <div style={stylesTwo} key={index}>
-                <h1 style={{ backgroundColor: "gray", color: "white" }}>
+              <div id="badge" key={index}>
+                <h1 id="header" style={{ backgroundColor: "gray", color: "white" }}>
                   Badge
                 </h1>
-                <p>Name: {`${badge.firstName} ${badge.lastName}`}</p>
-                <p>
-                  Phone Number:{" "}
+                <p id="name">Name: {`${badge.firstName} ${badge.lastName}`}</p>
+                <p id="phone">
+                  Phone Number:
                   {`${badge.phone
                     .toString()
                     .replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")}`}
                 </p>
-                <br />
-                <p>Place of Birth: {`${badge.placeOfBirth}`}</p>
-                <p>Email: {`${badge.email}`}</p>
-                <br />
-                <p>Favorite Food: {`${badge.favFood}`}</p>
-                <br />
-                <p>{`${badge.description}`}</p>
+
+                <p id="place" >Place of Birth: {`${badge.placeOfBirth}`}</p>
+                <p id="email">Email: {`${badge.email}`}</p>
+
+                <p id="food">Favorite Food: {`${badge.favFood}`}</p>
+
+                <p id="desc">{`${badge.description}`}</p>
               </div>
             );
           })}
-        </ol>
+        </div>
       </div>
     );
   }
