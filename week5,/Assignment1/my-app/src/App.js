@@ -5,20 +5,16 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer.js";
-
+import Footer from "./components/Footer";
 function App() {
-  let styles = {
-        textAlign: "center",
-    }
-
+  let styles = { textAlign:"center", }
   return (
     <div style={styles}>
-
+    <h1>Dean's Emergency Piping and Plumbing</h1>
       <Navbar /> 
       
       <Switch>
-        <Route exact path="/Home">
+        <Route exact path="/">
           <Home />
         </Route>
         <Route exact path="/About">
@@ -37,5 +33,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

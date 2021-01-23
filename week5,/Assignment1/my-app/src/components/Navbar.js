@@ -10,11 +10,10 @@ function Navbar(){
     }
     return(
         <div style={styles}>
-            <Link to="/Home">Home</Link>
+            <Link to="/">Home</Link>
             <Link to="/Services">Services</Link>
             <Link to="/Contact">Contact</Link>
-            <Link to="/About">About</Link>
-        
+            <Link to="/About">About</Link> 
         </div>
     )
 }
