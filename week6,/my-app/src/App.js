@@ -11,7 +11,9 @@ class App extends React.Component {
     return (
       <div>
         <header style={style}>React Calculator</header>
+        <hr/>
         <Calculator />
+        <hr/>
         <footer style={style}>&copy; 2021 WebDev Student Dean Wilcoxson</footer>
       </div>
     );
