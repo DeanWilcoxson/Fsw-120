@@ -9,28 +9,40 @@ class Calculator extends React.Component {
       calculation: "",
     };
   }
+
   handleClick = (e) => {
     this.setState({
       calculation: e.target.id,
     });
   };
+
   handleChange = (e) => {
     const { name, value } = e.target;
     this.setState({
       [name]: Number(value),
     });
   };
+
   calculate = () => {
     if (this.state.calculation === "add") {
-      return(`${this.state.num1} + ${this.state.num2} = ${this.state.num1 + this.state.num2}`);
+      return ` ${this.state.num1} + ${this.state.num2} = ${
+        this.state.num1 + this.state.num2
+      }`;
     } else if (this.state.calculation === "sub") {
-      return(`${this.state.num1} - ${this.state.num2} = ${this.state.num1 - this.state.num2}`);
+      return ` ${this.state.num1} - ${this.state.num2} = ${
+        this.state.num1 - this.state.num2
+      }`;
     } else if (this.state.calculation === "mul") {
-      return(`${this.state.num1} * ${this.state.num2} = ${this.state.num1 * this.state.num2}`);
+      return ` ${this.state.num1} * ${this.state.num2} = ${
+        this.state.num1 * this.state.num2
+      }`;
     } else if (this.state.calculation === "div") {
-      return(`${this.state.num1} / ${this.state.num2} = ${this.state.num1 / this.state.num2}`);
+      return ` ${this.state.num1} / ${this.state.num2} = ${
+        this.state.num1 / this.state.num2
+      }`;
     } else return "";
   };
+
   render() {
     return (
       <div id="calc">
@@ -80,5 +92,4 @@ class Calculator extends React.Component {
     );
   }
 }
-
 export default Calculator;
