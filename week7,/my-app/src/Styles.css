@@ -1,0 +1,15 @@
+    body {
+        background-color: rgba(173, 216, 230, 0.431);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.205);
+    }
+    
+    #mainDiv {}
+    
+    #loginForm {}

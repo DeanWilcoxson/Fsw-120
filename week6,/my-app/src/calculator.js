@@ -24,22 +24,16 @@ class Calculator extends React.Component {
   };
 
   calculate = () => {
+    let number1 = this.state.num1;
+    let number2 = this.state.num2;
     if (this.state.calculation === "add") {
-      return ` ${this.state.num1} + ${this.state.num2} = ${
-        this.state.num1 + this.state.num2
-      }`;
+      return ` ${number1} + ${number2} = ${number1 + number2}`;
     } else if (this.state.calculation === "sub") {
-      return ` ${this.state.num1} - ${this.state.num2} = ${
-        this.state.num1 - this.state.num2
-      }`;
+      return ` ${number1} - ${number2} = ${number1 - number2}`;
     } else if (this.state.calculation === "mul") {
-      return ` ${this.state.num1} * ${this.state.num2} = ${
-        this.state.num1 * this.state.num2
-      }`;
+      return ` ${number1} * ${number2} = ${number1 * number2}`;
     } else if (this.state.calculation === "div") {
-      return ` ${this.state.num1} / ${this.state.num2} = ${
-        this.state.num1 / this.state.num2
-      }`;
+      return ` ${number1} / ${number2} = ${number1 / number2}`;
     } else return "";
   };
 

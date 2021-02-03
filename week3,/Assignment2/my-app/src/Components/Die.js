@@ -34,9 +34,8 @@ class Die extends React.Component{
         }
         return(
             <div>
-                <h1 style={styles} type="checkbox">{this.state.num}</h1>
+                <h1 style={styles}>{this.state.num}</h1>
                 <button onClick={this.handleClick}>Roll</button>
-                <button>Hold</button>
             </div>
         )
     }
