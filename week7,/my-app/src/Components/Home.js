@@ -2,12 +2,16 @@ import React from "react";
 class Home extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Home</h1>
+      <div id="formGrid">
         <form id="loginForm">
-          <input type="email" placeholder="Email" required></input>
-          <input type="text" placeholder="Password" required></input>
-          <button >Log In</button>
+          <input type="email" id="email" placeholder="Email" required></input>
+          <input
+            type="text"
+            id="password"
+            placeholder="Password"
+            required
+          ></input>
+          <button id="logIn">Log In</button>
         </form>
       </div>
     );
