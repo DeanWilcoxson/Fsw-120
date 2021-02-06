@@ -5,35 +5,40 @@
                     "title": "What's Up Man!!",
                     "description": "@daveyjones Haven't heard from you in awhile cousin, I hope you're doing alright!",
                     "date": "1/21/2021",
-                    "author": "Dean Wilcoxson"
+                    "author": "Dean Wilcoxson|",
+                    "url": "https://ca.slack-edge.com/TKMTW1R1C-U016AJ6P4AX-4767907ed358-512"
                 },
                 {
                     "id": 1,
                     "title": "Love you Babe!",
                     "description": "Just a shout out to my fiance! @smwinchester, I Love you! Thank you for Everything you do for me and our girls, idk where we'd be without you.",
                     "date": "2/2/2021",
-                    "author": "Dean Wilcoxson"
+                    "author": "Dean Wilcoxson|",
+                    "url": "https://ca.slack-edge.com/TKMTW1R1C-U016AJ6P4AX-4767907ed358-512"
                 },
                 {
                     "id": 2,
                     "title": "My soon-to-be FIVE year old sweetheart",
                     "description": "It feels like only yesterday that I held you in my arms for the first time. Your beautiful face filled everyone's hearts with so much love. Now you are a month shy of being my 5-year-old kindergartener. To my strong-willed, intelligent, loving, hilarious, positive thinking sweetie... Daddy loves you forever <3 ",
                     "date": "2/3/2021",
-                    "author": "Dean Wilcoxson"
+                    "author": "Dean Wilcoxson|",
+                    "url": "https://ca.slack-edge.com/TKMTW1R1C-U016AJ6P4AX-4767907ed358-512"
                 },
                 {
                     "id": 3,
                     "title": "G.O.A.T. fr",
                     "description": "Eminem's The Slim Shady LP is the dopest of all time. Repeat all day son",
                     "date": "9/3/2010",
-                    "author": "Dean Wilcoxson"
+                    "author": "Dean Wilcoxson|",
+                    "url": "https://ca.slack-edge.com/TKMTW1R1C-U016AJ6P4AX-4767907ed358-512"
                 },
                 {
                     "id": 4,
                     "title": "Positivity",
                     "description": "Keep your focus on the present, your worries in the past, and your dreams towards the future.",
                     "date": "2/3/2021",
-                    "author": "Dean Wilcoxson"
+                    "author": "Dean Wilcoxson|",
+                    "url": "https://ca.slack-edge.com/TKMTW1R1C-U016AJ6P4AX-4767907ed358-512"
                 }
             ]
         },
@@ -43,35 +48,40 @@
                     "title": "Hello World!",
                     "description": "Im new to twitter, Hi everyone!",
                     "date": "1/15/2019",
-                    "author": "Joe Regular"
+                    "author": "Joe Regular|",
+                    "url": "https://images.unsplash.com/photo-1581391528803-54be77ce23e3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBpY3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 },
                 {
                     "id": 6,
                     "title": "Welcome to twitter @joeregular!!",
                     "description": "Ill be your first friend! LOL, nice to meet you!",
                     "date": "1/16/2019",
-                    "author": "Karen Simple"
+                    "author": "Karen Simple|",
+                    "url": "https://images.unsplash.com/photo-1581992652564-44c42f5ad3ad?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 },
                 {
                     "id": 7,
                     "title": "Wow Corona Virus Is Real!!!",
                     "description": "This shit is scary!!",
                     "date": "8/10/2020",
-                    "author": "Bill Politician"
+                    "author": "Bill Politician|",
+                    "url": "https://images.unsplash.com/photo-1569285645462-a3f9c6332d56?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fHBvbGl0aWNpYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 },
                 {
                     "id": 8,
                     "title": "Antifa??",
                     "description": "What really happened at the white house?",
                     "date": "1/20/2021",
-                    "author": "Conspiracy Theory Carl"
+                    "author": "Conspiracy Theory Carl|",
+                    "url": "https://images.unsplash.com/photo-1610261003803-224ee66747e1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmlsZSUyMHBpY3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 },
                 {
                     "id": 9,
                     "title": "Coding Is a ton of fun",
                     "description": "Well at least thats one way to put it.",
                     "date": "12/21/20",
-                    "author": "Tech Expert #1"
+                    "author": "Tech Expert Tony|",
+                    "url": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fHByb2ZpbGUlMjBwaWN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 }
             ]
         }

@@ -10,10 +10,11 @@ class Tweets extends React.Component {
 
     let tweets = data.data[0].myTweets.map(function (props) {
       return (
-        <div key={props.id}>
-          <h3>{props.title}</h3>
-          <h5>{props.description}</h5>
-          <h6>{`Author:${props.author} Date:${props.date}`}</h6>
+        <div key={props.id} id="returnDiv">
+          <img src={props.url} alt="IMG N/A" id="returnImg"></img>
+          <h3 id="returnH3">{props.title}</h3>
+          <h5 id="returnH5">{props.description}</h5>
+          <h6 id="returnH6">{`Author:${props.author} Date:${props.date}`}</h6>
         </div>
       );
     });
@@ -21,17 +22,17 @@ class Tweets extends React.Component {
 
     let moretweets = data.data[1].friendsTweets.map(function (props) {
       return (
-        <div key={props.id}>
-          <h3>{props.title}</h3>
-          <h5>{props.description}</h5>
-          <h6>{`Author:${props.author} Date:${props.date}`}</h6>
+        <div key={props.id} id="returnDiv">
+          <img src={props.url} alt="IMG N/A" id="returnImg"></img>
+          <h3 id="returnH3">{props.title}</h3>
+          <h5 id="returnH5">{props.description}</h5>
+          <h6 id="returnH6">{`Author:${props.author} Date:${props.date}`}</h6>
         </div>
       );
     });
     tweetsArray.push(moretweets);
 
     let sortedTweetsArray = tweetsArray.sort((a, b) => b.date - a.date);
-    console.log(sortedTweetsArray);
     return <div>{sortedTweetsArray}</div>;
   }
 }
