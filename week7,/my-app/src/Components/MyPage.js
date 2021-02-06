@@ -23,7 +23,7 @@ class MyPage extends React.Component {
           <form id="postForm">
             <input type="text" placeholder="Status" id="title"></input>
             <textarea
-              placeholder="How are you Feeling Today?"
+              placeholder="How are you feeling today?"
               id="description"
             />
             <button id="postBtn">Post</button>
