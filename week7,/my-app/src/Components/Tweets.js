@@ -15,6 +15,8 @@ class Tweets extends React.Component {
           <h3 id="returnH3">{props.title}</h3>
           <h5 id="returnH5">{props.description}</h5>
           <h6 id="returnH6">{`Author:${props.author} Date:${props.date}`}</h6>
+          <button id="editButton">Edit</button>
+          <button id="deleteButton">Delete</button>
         </div>
       );
     });
@@ -27,6 +29,8 @@ class Tweets extends React.Component {
           <h3 id="returnH3">{props.title}</h3>
           <h5 id="returnH5">{props.description}</h5>
           <h6 id="returnH6">{`Author:${props.author} Date:${props.date}`}</h6>
+          <button id="editButton">Edit</button>
+          <button id="deleteButton">Delete</button>
         </div>
       );
     });

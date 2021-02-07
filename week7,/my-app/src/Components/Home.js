@@ -1,8 +1,8 @@
 import React from "react";
 class Home extends React.Component {
-  constructor(){
-    super()
-    this.state = {}
+  constructor() {
+    super();
+    this.state = {};
   }
   // let isLoggedIn = () => async {
 
@@ -10,7 +10,6 @@ class Home extends React.Component {
   render() {
     return (
       <div id="formGrid">
-
         <form id="loginForm">
           <input type="email" id="email" placeholder="Email" required></input>
           <input

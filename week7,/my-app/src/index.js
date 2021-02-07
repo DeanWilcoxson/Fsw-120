@@ -2,13 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-// import { createContext } from "react";
+// import UserContext from './UserContext';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  // <UserContext value={"loggedIn"}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+  // </UserContext>,
   document.getElementById("root")
 );
 
-// export const UserContext = createContext(null);
