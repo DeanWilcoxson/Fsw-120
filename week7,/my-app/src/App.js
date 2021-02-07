@@ -6,15 +6,21 @@ import Tweets from "./Components/Tweets";
 import MyPage from "./Components/MyPage";
 import { SocialIcon } from "react-social-icons";
 import { Switch, Route } from "react-router-dom";
+import data from "./Data.json";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      data: data,
       loggedIn: "",
     };
   }
-
+addOne = (tweet) => {
+  this.setState(prevState =>({
+    data: [...data, tweet]
+  }))
+}
   // isLoggedIn = () => {
   //   this.state.loggedIn = true ? "hello":""
   // };
@@ -40,10 +46,10 @@ class App extends React.Component {
             <Home />
           </Route>
           <Route exact path="/Tweets">
-            <Tweets />
+            <Tweets data={this.state.data.data}/>
           </Route>
           <Route exact path="/MyPage">
-            <MyPage />
+            <MyPage data={this.state.data.data} addOne={this.addOne}/>
           </Route>
         </Switch>
         <footer>
