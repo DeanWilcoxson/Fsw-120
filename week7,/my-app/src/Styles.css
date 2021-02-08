@@ -54,6 +54,7 @@
         background-color: rgba(255, 255, 255, 0.418);
     }
     #returnDiv {
+        grid-column: 2/5;
         width: 80%;
         margin-left: 5%;
         margin-bottom: 10px;
@@ -82,8 +83,16 @@
         grid-column: 1/2;
         grid-row: 1/4;
         width: 100%;
-        height: 100%;
+        height: 90%;
         border-radius: 8px;
+    }
+    #editButton {
+        background-color: transparent;
+        border-radius: 15px;
+    }
+    #deleteButton {
+        background-color: transparent;
+        border-radius: 15px;
     }
     #postForm {
         grid-column: 2/3;
@@ -101,13 +110,18 @@
     }
     #postBtn {
         margin-bottom: 5%;
+        background-color: transparent;
+        border-radius: 10px;
+        width: 35%;
     }
     #myPageTweets {
         margin: 5%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (min-width: 500px) and (max-width: 999px) {
     body {
         background-image: url("https://images.unsplash.com/photo-1551817958-d9d86fb29431?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHR3aXR0ZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
         background-position: center;
@@ -124,7 +138,7 @@
     }
     footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -190,9 +204,134 @@
     #returnImg {
         grid-column: 1/2;
         grid-row: 1/4;
-        width: 50%;
+        width: 100%;
         height: 100%;
         border-radius: 8px;
+    }
+    #editButton {
+        background-color: transparent;
+        border-radius: 15px;
+    }
+    #deleteButton {
+        background-color: transparent;
+        border-radius: 15px;
+    }
+    #postForm {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px;
+        border: rgba(55, 168, 243, 0.835) 2px outset;
+        background-color: rgba(255, 255, 255, 0.418);
+    }
+    #title {
+        margin-top: 8%;
+    }
+    #postBtn {
+        margin-bottom: 5%;
+    }
+    #myPageTweets {
+        margin: 5%;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    body {
+        background-image: url("https://images.unsplash.com/photo-1551817958-d9d86fb29431?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHR3aXR0ZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    header {
+        position: initial;
+        font-size: 48px;
+        text-align: justify;
+        text-shadow: grey 2px 2px 2px;
+        margin-left: 5%;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-shadow: grey 2px 2px 3px;
+    }
+    #navbar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 97%;
+        justify-content: space-evenly;
+        box-shadow: grey 2px 2px 2px;
+        border: 2px outset rgba(55, 168, 243, 0.835);
+        border-radius: 5px;
+        background-color: rgba(55, 168, 243, 0.835);
+    }
+    #mainDiv {
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #formGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #loginForm {
+        padding: 50px;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px;
+        border: rgba(55, 168, 243, 0.835) 2px outset;
+        background-color: rgba(255, 255, 255, 0.418);
+    }
+    #returnDiv {
+        width: 80%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        display: grid;
+        border-radius: 10px;
+        border: 2px outset grey;
+        box-shadow: grey 5px 5px 5px;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: rgba(55, 168, 243, 0.835);
+    }
+    #returnH3 {
+        grid-column: 2/5;
+        text-decoration: underline;
+    }
+    #returnH5 {
+        padding-left: 5%;
+        grid-column: 2/5;
+        display: flex;
+    }
+    #returnH6 {
+        padding-left: 5%;
+        grid-column: 2/5;
+        display: flex;
+    }
+    #returnImg {
+        grid-column: 1/2;
+        grid-row: 1/4;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+    #editButton {
+        background-color: transparent;
+        border-radius: 15px;
+    }
+    #deleteButton {
+        background-color: transparent;
+        border-radius: 15px;
     }
     #postForm {
         grid-column: 2/3;

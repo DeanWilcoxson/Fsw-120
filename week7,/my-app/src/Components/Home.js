@@ -4,9 +4,6 @@ class Home extends React.Component {
     super();
     this.state = {};
   }
-  // let isLoggedIn = () => async {
-
-  // }
   render() {
     return (
       <div id="formGrid">

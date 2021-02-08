@@ -16,15 +16,12 @@ class App extends React.Component {
       loggedIn: "",
     };
   }
-addOne = (tweet) => {
-  this.setState(prevState =>({
-    data: [...data, tweet]
-  }))
-}
-  // isLoggedIn = () => {
-  //   this.state.loggedIn = true ? "hello":""
-  // };
-
+  addOne = (tweet) => {
+    this.setState((prevState) => ({
+      data: [...data, tweet],
+    }));
+  };
+ 
   render() {
     let style = {
       height: 35,
@@ -46,10 +43,10 @@ addOne = (tweet) => {
             <Home />
           </Route>
           <Route exact path="/Tweets">
-            <Tweets data={this.state.data.data}/>
+            <Tweets data={this.state.data.data} />
           </Route>
           <Route exact path="/MyPage">
-            <MyPage data={this.state.data.data} addOne={this.addOne}/>
+            <MyPage data={this.state.data.data} addOne={this.addOne} />
           </Route>
         </Switch>
         <footer>

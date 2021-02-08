@@ -5,10 +5,6 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 class Navbar extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
   render() {
     const home = <FontAwesomeIcon icon={faHome} color="white" />;
     const feed = <FontAwesomeIcon icon={faListAlt} color="white" />;
