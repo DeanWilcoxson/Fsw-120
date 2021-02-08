@@ -17,11 +17,38 @@ class App extends React.Component {
     };
   }
   addOne = (tweet) => {
+    // console.log(this.state.data);
+    let newData = this.state.data;
+    newData = {
+      data: [
+        { myTweets: [...this.state.data.data[0].myTweets, tweet] },
+        this.state.data.data[1],
+      ],
+    };
+    // console.log(newData);
     this.setState((prevState) => ({
-      data: [...data, tweet],
+      data: newData,
     }));
   };
- 
+  editOne = (id) => {
+    //Same Logic as "Delete" but with "map"
+  };
+  deleteOne = (id) => {
+    console.log(id);
+    let newData = this.state.data;
+    let updateTweets = this.state.data.data[0].myTweets;
+    let updated = updateTweets.filter(function (tweet) {
+      return tweet.id !== id;
+    });
+    console.log(updated);
+    newData = {
+      data: [{ myTweets: updated }, this.state.data.data[1]],
+    };
+    console.log(newData);
+    this.setState((prevState) => ({
+      data: newData,
+    }));
+  };
   render() {
     let style = {
       height: 35,
@@ -46,7 +73,12 @@ class App extends React.Component {
             <Tweets data={this.state.data.data} />
           </Route>
           <Route exact path="/MyPage">
-            <MyPage data={this.state.data.data} addOne={this.addOne} />
+            <MyPage
+              data={this.state.data.data}
+              addOne={this.addOne}
+              deleteOne={this.deleteOne}
+              editOne={this.editOne}
+            />
           </Route>
         </Switch>
         <footer>
