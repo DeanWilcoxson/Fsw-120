@@ -13,11 +13,17 @@ class App extends React.Component {
     super();
     this.state = {
       data: data,
-      loggedIn: "",
+      // loggedIn: false,
     };
   }
+  //  logIn = () => {
+  //   let log = document.getElementById("email")
+  //   if( log.value === ""){
+  //     this.setState({
+  //       loggedIn: true
+  //   })
+  // }}
   addOne = (tweet) => {
-    // console.log(this.state.data);
     let newData = this.state.data;
     newData = {
       data: [
@@ -25,14 +31,27 @@ class App extends React.Component {
         this.state.data.data[1],
       ],
     };
-    // console.log(newData);
     this.setState((prevState) => ({
       data: newData,
     }));
   };
-  editOne = (id) => {
-    //Same Logic as "Delete" but with "map"
-  };
+  // editOne = (id) => {
+  //   //Same Logic as "Delete" but with "map"
+  //   console.log(id);
+  //   let newData = this.state.data;
+  //   let updateTweets = this.state.data.data[0].myTweets;
+  //   let updated = updateTweets.map(function (tweet) {
+  //     return tweet.id === id;
+  //   });
+  //   console.log(updated);
+  //   newData = {
+  //     data: [{ myTweets: updated }, this.state.data.data[1]],
+  //   };
+  //   console.log(newData);
+  //   this.setState((prevState) => ({
+  //     data: newData,
+  //   }));
+  // };
   deleteOne = (id) => {
     console.log(id);
     let newData = this.state.data;

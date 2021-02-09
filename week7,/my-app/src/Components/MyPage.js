@@ -23,7 +23,6 @@ class MyPage extends React.Component {
   };
   onClick = (e) => {
     e.preventDefault();
-    console.log(this.props.data[0]);
     var tweet = {
       author: this.props.data[0].myTweets[0].author,
       url: this.props.data[0].myTweets[0].url,
@@ -41,40 +40,44 @@ class MyPage extends React.Component {
     let day = date.getDate().toString();
     if (month.length < 2) month = "0" + month;
     if (day.length < 2) day = "0" + day;
-
-    console.log(date);
-    console.log(year, day, month);
     return `${month}/${day}/${year}`;
   };
   getId = (data) => {
     var arr = data;
-    console.log(arr);
     let myTweetsArr = arr[0].myTweets.length;
     let myFriendsArr = arr[1].friendsTweets.length;
     return `${myTweetsArr + myFriendsArr + 1}`;
   };
-  editOne=()=>{
-    this.setState({
-
-  })}
+  // edited = () => {
+  //   this.setState({});
+  // };
+  // editing = () => {
+  //   this.setState({});
+  // };
   render = () => {
     const editIcon = <FontAwesomeIcon icon={faEdit} color="white" />;
     const deleteIcon = <FontAwesomeIcon icon={faTrashAlt} color="white" />;
     const post = <FontAwesomeIcon icon={faSave} color="white" />;
     let tweets = this.props.data[0].myTweets;
-    let myTweets = tweets.map( (props) => {
+    let myTweets = tweets.map((props) => {
       return (
         <div key={props.id} id="returnDiv">
           <img src={props.url} alt="IMG N/A" id="returnImg"></img>
           <p id="returnH3">{props.title}</p>
           <h5 id="returnH5">{props.description}</h5>
           <h6 id="returnH6">{`Author:${props.author} Date:${props.date}`}</h6>
-          <button id="editButton" onClick={this.editOne}>
-            {editIcon}
+          <button 
+            id="editButton" 
+            // onClick={this.props.editOne(props.id)}
+            >{editIcon}
           </button>
-          <button id="deleteButton" onClick={(e) => {
-            console.log(this)
-            this.props.deleteOne(props.id)}}>
+          <button
+            id="deleteButton"
+            onClick={(e) => {
+              console.log(this);
+              this.props.deleteOne(props.id);
+            }}
+          >
             {deleteIcon}
           </button>
         </div>
@@ -86,18 +89,18 @@ class MyPage extends React.Component {
           <form id="postForm">
             <input
               type="text"
-              placeholder="Status"
               id="title"
               name="title"
-              value={this.state.title}
               onChange={this.onChange}
+              value={this.state.title}
+              placeholder="Status"
             ></input>
             <textarea
-              placeholder="How are you feeling today?"
               id="description"
               name="description"
               onChange={this.onChange}
               value={this.state.description}
+              placeholder="How are you feeling today?"
             />
             <button onClick={this.onClick} id="postBtn">
               {post}
@@ -107,6 +110,6 @@ class MyPage extends React.Component {
         <div id="myPageTweets">{myTweets}</div>
       </div>
     );
-  }
+  };
 }
 export default MyPage;

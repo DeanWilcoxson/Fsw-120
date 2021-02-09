@@ -1,12 +1,7 @@
 import React from "react";
 class Tweets extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
   render() {
     let tweetsArray = [];
-
     let tweets = this.props.data[0].myTweets.map(function (x) {
       return (
         <div key={x.id} id="returnDiv">
@@ -18,7 +13,6 @@ class Tweets extends React.Component {
       );
     });
     tweetsArray.push(...tweets);
-
     let moretweets = this.props.data[1].friendsTweets.map(function (x) {
       return (
         <div key={x.id} id="returnDiv">
@@ -30,7 +24,6 @@ class Tweets extends React.Component {
       );
     });
     tweetsArray.push(...moretweets);
-
     let sortedTweetsArray = tweetsArray.sort((a, b) => {
       let stringA = a.props.children[3].props.children
         .split("| ")[1]
@@ -40,10 +33,8 @@ class Tweets extends React.Component {
         .split("| ")[1]
         .split(":")[1]
         .split("/");
-
       let dateA = stringA[2] + stringA[0] + stringA[1];
       let dateB = stringB[2] + stringB[0] + stringB[1];
-
       return dateA - dateB;
     });
     return <div id="myPageTweets">{sortedTweetsArray}</div>;

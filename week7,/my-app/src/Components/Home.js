@@ -1,8 +1,10 @@
 import React from "react";
 class Home extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      loggedIn: props.loggedIn,
+    };
   }
   render() {
     return (
@@ -15,7 +17,9 @@ class Home extends React.Component {
             placeholder="Password"
             required
           ></input>
-          <button id="logIn" /* onClick={this.isLoggedIn()} */>Log In</button>
+          <button id="logIn" onClick={this.props.logIn}>
+            Log In
+          </button>
         </form>
       </div>
     );
