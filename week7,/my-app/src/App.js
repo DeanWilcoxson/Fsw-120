@@ -35,23 +35,29 @@ class App extends React.Component {
       data: newData,
     }));
   };
-  // editOne = (id) => {
-  //   //Same Logic as "Delete" but with "map"
-  //   console.log(id);
-  //   let newData = this.state.data;
-  //   let updateTweets = this.state.data.data[0].myTweets;
-  //   let updated = updateTweets.map(function (tweet) {
-  //     return tweet.id === id;
-  //   });
-  //   console.log(updated);
-  //   newData = {
-  //     data: [{ myTweets: updated }, this.state.data.data[1]],
-  //   };
-  //   console.log(newData);
-  //   this.setState((prevState) => ({
-  //     data: newData,
-  //   }));
-  // };
+  
+  editOne = (update) => {
+    console.log(update);
+    let newData = this.state.data;
+    let updateTweets = this.state.data.data[0].myTweets;
+    let updated = updateTweets.map(function (tweet) {
+      console.log(tweet)
+      if(update.id === tweet.id){
+        return update
+      }
+      else return tweet
+    });
+    console.log(updated);
+    newData = {
+      data: [{ myTweets: updated }, this.state.data.data[1]],
+    };
+    console.log(newData);
+    this.setState((prevState) => ({
+      data: newData,
+    }));
+  };
+  
+  
   deleteOne = (id) => {
     console.log(id);
     let newData = this.state.data;
