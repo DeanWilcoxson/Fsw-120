@@ -3,22 +3,22 @@ import Color from "./Components/Color";
 
 class App extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      color: ["white", "white", "white", "white"]
+      color: ["white", "white", "white", "white"],
+    };
+  }
+  smallTimeDj = () => {
+    if (this.state.color[0] === "white") {
+      this.setState({
+        color: ["black", "black", "black", "black"],
+      });
+    } else if (this.state.color[0] === "black") {
+      this.setState({
+        color: ["white", "white", "white", "white"],
+      });
     }
-  }
-  smallTimeDj=()=>{
-    if(this.state.color[0] === "white") {
-      this.setState({
-        color: ["black", "black", "black", "black"]
-      });
-    } else if(this.state.color[0] === "black") {
-      this.setState({
-        color: ["white", "white", "white", "white"]
-      });
-    } 
-  }
+  };
   render() {
     return (
       <div>
